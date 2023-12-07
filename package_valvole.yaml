@@ -109,7 +109,7 @@ template:
         unique_id: tempo_valvola_cucina
         icon: mdi:history
         state: >-
-          {% from 'history_stats_custom.jinja' import time_on %}
+          {% from 'history_stats.jinja' import time_on %}
           {{ time_on('binary_sensor.valvola_cucina') }}
         attributes:
           Durata: >
