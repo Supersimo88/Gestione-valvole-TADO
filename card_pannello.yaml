@@ -72,7 +72,7 @@
     quadrato:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         show_name: true
         show_state: false
         show_label: true
@@ -99,7 +99,7 @@
     valvole_accese:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         icon: mdi:radiator
         show_name: true
         show_state: false
@@ -138,7 +138,7 @@
     accensione_al_rientro_icona:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         entity: automation.accensione_termosifoni_al_rientro
         icon: mdi:radiator-off
         show_name: false
@@ -187,7 +187,7 @@
     alert_riscaldamenti_accesi_icona:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         entity: automation.avviso_riscaldamento_acceso
         icon: mdi:radiator-off
         show_name: false
@@ -235,7 +235,7 @@
     avvisi_icona:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         entity: input_boolean.avvisi_generale_ricircolo_aria
         show_name: false
         show_label: false
@@ -257,7 +257,7 @@
     away_button:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         confirmation:
           text: '[[[ return `Settare il programma Fuori Casa?` ]]]'
         entity: script.away
@@ -294,7 +294,7 @@
     preset_mode_button:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         confirmation:
           text: '[[[ return `Settare il programma Home?` ]]]'
         entity: script.preset_mode
@@ -331,7 +331,7 @@
     spegni_tutto_button:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         confirmation:
           text: '[[[ return `Sicuro di spegnere tutte le valvole?` ]]]'
         entity: script.power_off_valvole
