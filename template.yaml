@@ -238,7 +238,7 @@ card_valvole:
     away:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         icon: mdi:home-export-outline
         show_name: true
         show_state: false
@@ -248,7 +248,7 @@ card_valvole:
     umidita:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         entity: "[[[return variables.umidita]]]"
         layout: icon_state
         show_name: false
@@ -361,7 +361,7 @@ card_valvole:
     trv:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         label: >
           [[[
             if (states['sensor.' + variables.stanza + '_riscaldamento'].state < 1)return 'CHIUSA';
@@ -377,7 +377,7 @@ card_valvole:
     batteria_valvola:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         entity: "[[[return 'binary_sensor.valvola_' + variables.stanza + '_batteria']]]"
         layout: icon_state
         show_name: false
@@ -396,7 +396,7 @@ card_valvole:
     batteria_sync:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         layout: icon_state
         icon: mdi:battery-sync-outline
         show_name: false
@@ -414,7 +414,7 @@ card_valvole:
     divider:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         show_icon: false
         show_label: true
         styles:
@@ -427,7 +427,7 @@ card_valvole:
     mensile:
       card:
         type: custom:button-card #Mensile
-        template: no_background
+        template: 
         label: >
           [[[ return states['sensor.tempo_valvola_' + variables.stanza].attributes.Mese ]]]
         name: "MENSILE"
@@ -449,7 +449,7 @@ card_valvole:
     annuale:
       card:
         type: custom:button-card #Annuale
-        template: no_background
+        template: 
         label: >
           [[[ return states['sensor.tempo_valvola_' + variables.stanza].attributes.Anno ]]]
         name: " ANNUALE"
@@ -471,7 +471,7 @@ card_valvole:
     oggi:
       card:
         type: custom:button-card # Oggi
-        template: no_background
+        template: 
         label: >
           [[[ return states['sensor.tempo_valvola_' + variables.stanza].attributes.Oggi ]]]
         name: " OGGI "
@@ -553,7 +553,7 @@ card_valvole:
       card:
         type: custom:button-card
         layout: icon_name_state
-        template: no_background
+        template: 
         entity: "[[[ return variables.contatto_finestra ]]]"
         icon: mdi:window-open-variant
         size: 60%
@@ -612,7 +612,7 @@ card_valvole:
       card:
         type: custom:button-card
         layout: icon_name_state
-        template: no_background
+        template: 
         entity: "[[[ return 'sensor.ricircolo_aria_' + variables.stanza ]]]"
         show_name: false
         size: 100%
@@ -669,7 +669,7 @@ card_valvole:
     impostazioni:
       card:
         type: custom:button-card
-        template: no_background
+        template: 
         icon: mdi:cog
         size: 100%
         show_label: false
